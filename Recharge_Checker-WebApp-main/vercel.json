@@ -1,0 +1,8 @@
+{
+  "builds": [
+    { "src": "dishhome_webapp/wsgi.py", "use": "@vercel/python" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "dishhome_webapp/wsgi.py" }
+  ]
+}
